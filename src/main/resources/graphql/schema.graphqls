@@ -1,0 +1,17 @@
+type Player {
+    id: ID!
+    name: String
+    team: Team
+}
+
+enum Team {
+    CHE
+    BAR
+    MUN
+    CSK
+    RMA
+}
+
+type Query {
+    findAll: [Player]
+}
