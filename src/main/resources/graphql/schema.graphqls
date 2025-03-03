@@ -14,4 +14,11 @@ enum Team {
 
 type Query {
     findAll: [Player]
+    findById(id: ID): Player
+}
+
+type Mutation {
+    createPlayers(name: String, team: Team): Player
+    updatePlayers(id: ID, name: String, team: Team): Player
+    deletePlayers(id: ID): Player
 }
